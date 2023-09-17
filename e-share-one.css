@@ -1,0 +1,146 @@
+.e-share-one {
+  width: 60%;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.e-share-one .Responsible_square {
+  position: relative;
+}
+.e-share-one .Responsible_square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.e-share-one .Responsible_square .Responsible_square_content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.e-share-one > div {
+  width: 13%;
+}
+.e-share-one > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.e-share-one > div > div a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9e7f0;
+  border-radius: 15px;
+}
+
+.e-share-one-copy_container {
+  margin-top: 2rem;
+  height: 120px;
+}
+
+.e-share-one-copy_container > div:first-child {
+  color: #3a3a3a;
+  /* text-align: right; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 35px; /* 325% */
+}
+
+.e-share-one-copy_container > div:last-child {
+  height: 60%;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d7e4ee;
+  background: #f8f9fc;
+}
+
+.e-share-one-copy_container > div:last-child > div {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.e-share-one-copy_container .copy_text {
+  color: #dcb051;
+  text-align: center;
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52px; /* 325% */
+}
+
+.e-share-one-copy_container .link_text {
+  color: #3a3a3a;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 52px;
+  text-overflow: ellipsis;
+}
+
+.e-share-one-copy_container .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.e-share-one-copy_container .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 200%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.e-share-one-copy_container .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.e-share-one-copy_container .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.e-share-one-copy_container button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Responsive Style */
+@media only screen and (max-width: 768px) {
+  .e-share-one > div {
+    max-width: 80px;
+    width: 60%;
+  }
+  .e-share-one > div > div a svg {
+    width: 50%;
+  }
+}
+
+[dir="rtl"] .e-share-one-copy_container > div:first-child {
+  text-align: right;
+}
