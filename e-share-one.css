@@ -85,6 +85,8 @@
   font-weight: 300;
   line-height: 52px;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .e-share-one-copy_container .tooltip {
